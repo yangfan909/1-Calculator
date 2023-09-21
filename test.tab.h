@@ -55,12 +55,14 @@ extern int yydebug;
     YYerror = 256,                 /* error  */
     YYUNDEF = 257,                 /* "invalid token"  */
     NUMBER = 258,                  /* NUMBER  */
-    ADD = 259,                     /* ADD  */
-    SUB = 260,                     /* SUB  */
-    MUL = 261,                     /* MUL  */
-    DIV = 262,                     /* DIV  */
-    EXPONENT = 263,                /* EXPONENT  */
-    EOL = 264                      /* EOL  */
+    LP = 259,                      /* LP  */
+    RP = 260,                      /* RP  */
+    ADD = 261,                     /* ADD  */
+    SUB = 262,                     /* SUB  */
+    MUL = 263,                     /* MUL  */
+    DIV = 264,                     /* DIV  */
+    EXPONENT = 265,                /* EXPONENT  */
+    EOL = 266                      /* EOL  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -73,7 +75,7 @@ union YYSTYPE
 
 	float val;
 
-#line 77 "test.tab.h"
+#line 79 "test.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;
